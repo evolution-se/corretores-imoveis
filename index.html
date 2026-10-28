@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nobre Lar Imoveis | Imoveis para Comprar e Alugar</title>
+  <meta name="description" content="A Nobre Lar Imoveis reune casas, apartamentos e imoveis comerciais para venda e locacao, com atendimento direto por WhatsApp e acompanhamento de um corretor.">
+  <link rel="canonical" href="https://www.seudominio.com.br/">
+  <meta property="og:title" content="Nobre Lar Imoveis | Imoveis para Comprar e Alugar">
+  <meta property="og:description" content="Casas, apartamentos e imoveis comerciais para venda e locacao, com atendimento direto por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.seudominio.com.br/images/hero/hero-imobiliaria.jpg">
+  <meta property="og:url" content="https://www.seudominio.com.br/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0F2A47">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegacao principal">
+      <div class="container-xl">
+        <a class="brand" href="#inicio">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#0F2A47"/><g fill="none" stroke="#C8A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22 L20 12 L32 22"/><rect x="12" y="22" width="16" height="10" rx="2"/><rect x="17" y="25" width="6" height="7" rx="1"/></g></svg>
+          <div>
+            <div class="brand-name">Nobre Lar</div>
+            <div class="brand-sub">IMOVEIS</div>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#imoveis">Busca de imoveis</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+          <a class="btn btn-gold btn-sm ms-lg-3 header-cta" data-wa="geral" href="#">Falar com um corretor</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="conteudo">
+  <section id="inicio" class="hero" style="background-image: url('images/hero/hero-imobiliaria.svg');">
+    <div class="container">
+      <div class="hero-content reveal">
+        <span class="eyebrow light">IMOVEIS PARA COMPRAR E ALUGAR</span>
+        <h1>Encontre o imovel ideal para o seu proximo capitulo.</h1>
+        <p class="lead">A Nobre Lar Imoveis reune casas, apartamentos e imoveis comerciais para venda e locacao, com atendimento direto por WhatsApp e acompanhamento de um corretor em cada etapa.</p>
+        <div class="hero-ctas">
+          <a href="#imoveis" class="btn btn-gold">Ver imoveis</a>
+          <a class="btn btn-outline-light" data-wa="geral" href="#">Falar com um corretor</a>
+        </div>
+        <ul class="trust-list">
+          <li><i class="bi bi-whatsapp"></i> Atendimento direto pelo WhatsApp</li>
+          <li><i class="bi bi-house"></i> Imoveis para compra e locacao</li>
+          <li><i class="bi bi-person-check"></i> Acompanhamento do corretor em cada etapa</li>
+          <li><i class="bi bi-file-earmark-text"></i> Orientacao sobre documentacao</li>
+        </ul>
+      </div>
+      <div class="quick-search reveal">
+        <div class="qs-tabs">
+          <button class="qs-tab active" data-value="todos" type="button">Todos</button>
+          <button class="qs-tab" data-value="venda" type="button">Comprar</button>
+          <button class="qs-tab" data-value="aluguel" type="button">Alugar</button>
+        </div>
+        <div class="qs-grid">
+          <div>
+            <label class="form-label" for="qs-tipo">Tipo de imovel</label>
+            <select id="qs-tipo" class="form-select"></select>
+          </div>
+          <div>
+            <label class="form-label" for="qs-cidade">Cidade ou regiao</label>
+            <select id="qs-cidade" class="form-select"></select>
+          </div>
+          <div class="d-none d-lg-block"></div>
+          <div>
+            <button type="button" id="qs-btn" class="btn btn-gold w-100">Buscar imoveis</button>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3" style="color:rgba(255,255,255,0.6);font-size:13px;">Imoveis, precos e fotos desta pagina sao ficticios, para fins de demonstracao.</p>
+    </div>
+  </section>
+  <section class="support-strip">
+    <div class="container-xl">
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><div class="support-item"><i class="bi bi-cash-coin"></i><span>Compra e venda</span></div></div>
+        <div class="col-6 col-md-3"><div class="support-item"><i class="bi bi-key"></i><span>Locacao residencial e comercial</span></div></div>
+        <div class="col-6 col-md-3"><div class="support-item"><i class="bi bi-building"></i><span>Avaliacao de imoveis</span></div></div>
+        <div class="col-6 col-md-3"><div class="support-item"><i class="bi bi-file-earmark-text"></i><span>Orientacao sobre documentacao</span></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- DESTAQUES -->
+  <section id="destaques" class="section">
+    <div class="container-xl">
+      <div class="text-center mb-4">
+        <span class="eyebrow">SELECAO DA SEMANA (DEMONSTRATIVA)</span>
+        <h2 class="section-title center">Imoveis em destaque</h2>
+        <p class="section-subtitle mx-auto">Uma selecao de imoveis para comprar e alugar, com fotos e informacoes ficticias para demonstracao.</p>
+      </div>
+      <div class="row g-4" id="destaques-grid"></div>
+      <div class="text-center mt-4">
+        <a href="#imoveis" class="btn btn-outline-navy">Ver todos os imoveis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS + LISTAGEM -->
+  <section id="imoveis" class="section surface">
+    <div class="container-xl">
+      <div class="text-center mb-4">
+        <span class="eyebrow">BUSCA DE IMOVEIS</span>
+        <h2 class="section-title center">Encontre o imovel certo para voce</h2>
+        <p class="section-subtitle mx-auto">Filtre por finalidade, tipo, cidade e faixa de preco. Os resultados atualizam automaticamente.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="purpose-tabs" role="radiogroup" aria-label="Finalidade">
+          <button class="purpose-tab active" data-value="todos" type="button">Todos</button>
+          <button class="purpose-tab" data-value="venda" type="button">Comprar</button>
+          <button class="purpose-tab" data-value="aluguel" type="button">Alugar</button>
+        </div>
+        <div class="filter-grid">
+          <div>
+            <label class="form-label" for="filter-tipo">Tipo de imovel</label>
+            <select id="filter-tipo" class="form-select"></select>
+          </div>
+          <div>
+            <label class="form-label" for="filter-cidade">Cidade ou regiao</label>
+            <select id="filter-cidade" class="form-select"></select>
+          </div>
+          <div>
+            <label class="form-label" for="filter-preco">Faixa de preco</label>
+            <select id="filter-preco" class="form-select"></select>
+          </div>
+          <div class="filter-actions">
+            <button type="button" id="clear-filters" class="btn btn-ghost">Limpar filtros</button>
+          </div>
+        </div>
+      </div>
+      <div class="results-head">
+        <div class="results-count" id="results-count" aria-live="polite">0 imoveis encontrados</div>
+      </div>
+      <div class="row g-4" id="property-grid"></div>
+      <div id="empty-state" class="empty-state d-none mt-4">
+        <i class="bi bi-search"></i>
+        <h3 class="mt-3">Nenhum imovel encontrado com esses filtros</h3>
+        <p class="text-muted">Tente ajustar os filtros ou fale com um corretor.</p>
+        <div class="d-flex gap-2 justify-content-center flex-wrap mt-3">
+          <button type="button" class="btn btn-ghost" onclick="clearFilters()">Limpar filtros</button>
+          <a id="empty-wa" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Pedir ajuda a um corretor</a>
+        </div>
+      </div>
+      <p class="text-muted small mt-4">Imoveis, precos e condicoes ficticios, apenas para demonstracao.</p>
+    </div>
+  </section>
+
+  <!-- ANUNCIE -->
+  <section id="anuncie" class="section anuncie">
+    <div class="container-xl">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <span class="eyebrow light">PARA PROPRIETARIOS</span>
+          <h2>Quer vender ou alugar o seu imovel?</h2>
+          <p>A Nobre Lar orienta sobre documentacao, avaliacao e divulgacao do seu imovel, com atendimento proximo e informacao clara em cada etapa. Sem promessas de prazos ou valores.</p>
+          <a class="btn btn-gold mt-3" data-wa="anunciar" href="#">Anunciar meu imovel</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-md-4"><div class="step-card"><div class="n">01</div><h4>Conte sobre o imovel</h4><p class="small mb-0">Caracteristicas, localizacao e condicoes.</p></div></div>
+            <div class="col-md-4"><div class="step-card"><div class="n">02</div><h4>Avaliacao com um corretor</h4><p class="small mb-0">Analise do mercado e orientacao.</p></div></div>
+            <div class="col-md-4"><div class="step-card"><div class="n">03</div><h4>Divulgacao e atendimento</h4><p class="small mb-0">Atendimento aos interessados.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="about-img-wrap">
+            <img src="images/about/sobre.svg" alt="Equipe de atendimento da imobiliaria (demonstrativo)" class="about-img w-100" width="800" height="1000" loading="lazy">
+            <div class="about-frame"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="eyebrow">SOBRE A NOBRE LAR</span>
+          <h2 class="section-title">Atendimento proximo, informacao clara e imoveis selecionados</h2>
+          <p>A Nobre Lar Imoveis atua com transparencia e atendimento consultivo, ajudando clientes a encontrar imoveis para comprar ou alugar e proprietarios a vender ou locar com seguranca.</p>
+          <p>O foco esta na clareza das informacoes, no acompanhamento do cliente e na orientacao sobre documentacao em cada etapa da negociacao.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Atendimento pelo WhatsApp e presencial</li>
+            <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Orientacao sobre documentacao do imovel</li>
+            <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Acompanhamento do inicio ao fim</li>
+            <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Atuacao em compra, venda e locacao</li>
+          </ul>
+          <p class="small text-muted mt-3">CRECI/UF 00000-J (exemplo). Substituir pelo registro real e verificado da imobiliaria e do corretor responsavel.</p>
+          <a class="btn btn-gold mt-2" data-wa="geral" href="#">Falar com a equipe</a>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="text-center mb-4">
+          <span class="eyebrow">EQUIPE (DEMONSTRATIVA)</span>
+          <h3 class="section-title center">Corretores de exemplo</h3>
+          <p class="text-muted small">Perfis demonstrativos. Substituir por profissionais reais, com CRECI verificado.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="team-card">
+              <img src="images/about/corretor-01.svg" alt="Corretor demonstrativo 1" width="300" height="400" loading="lazy">
+              <h4>Mariana Costa</h4>
+              <div class="role">Corretora de imoveis</div>
+              <div class="creci">CRECI/UF 00000-F (exemplo)</div>
+              <a class="btn btn-whatsapp btn-sm mt-2" data-wa="equipe" data-nome="Mariana Costa" href="#">Falar com Mariana</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img src="images/about/corretor-02.svg" alt="Corretor demonstrativo 2" width="300" height="400" loading="lazy">
+              <h4>Rafael Almeida</h4>
+              <div class="role">Corretor de imoveis</div>
+              <div class="creci">CRECI/UF 00000-F (exemplo)</div>
+              <a class="btn btn-whatsapp btn-sm mt-2" data-wa="equipe" data-nome="Rafael Almeida" href="#">Falar com Rafael</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-card">
+              <img src="images/about/corretor-03.svg" alt="Corretor demonstrativo 3" width="300" height="400" loading="lazy">
+              <h4>Juliana Ferreira</h4>
+              <div class="role">Corretora de imoveis</div>
+              <div class="creci">CRECI/UF 00000-F (exemplo)</div>
+              <a class="btn btn-whatsapp btn-sm mt-2" data-wa="equipe" data-nome="Juliana Ferreira" href="#">Falar com Juliana</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="section surface">
+    <div class="container-xl">
+      <div class="text-center mb-4">
+        <span class="eyebrow">COMO FUNCIONA</span>
+        <h2 class="section-title center">Um caminho claro para cada objetivo</h2>
+      </div>
+      <ul class="nav how-tabs justify-content-center" id="howTabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active" href="#" data-bs-target="#pane-comprar" role="tab">Quero comprar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#pane-alugar" role="tab">Quero alugar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#pane-anunciar" role="tab">Quero anunciar</a></li>
+      </ul>
+      <div class="mt-4">
+        <div class="how-pane" id="pane-comprar">
+          <div class="how-step"><div class="num">1</div><div><strong>Escolha o imovel</strong><br><span class="text-muted">Navegue e filtre as opcoes.</span></div></div>
+          <div class="how-step"><div class="num">2</div><div><strong>Converse com um corretor</strong><br><span class="text-muted">Tire duvidas pelo WhatsApp.</span></div></div>
+          <div class="how-step"><div class="num">3</div><div><strong>Visita e analise da documentacao</strong><br><span class="text-muted">Agende visita e revise documentos.</span></div></div>
+          <div class="how-step"><div class="num">4</div><div><strong>Negociacao e fechamento orientado</strong><br><span class="text-muted">Acompanhamento ate a conclusao.</span></div></div>
+        </div>
+        <div class="how-pane d-none" id="pane-alugar">
+          <div class="how-step"><div class="num">1</div><div><strong>Escolha o imovel</strong><br><span class="text-muted">Filtre por regiao e valor.</span></div></div>
+          <div class="how-step"><div class="num">2</div><div><strong>Agende a visita</strong><br><span class="text-muted">Conheca o imovel.</span></div></div>
+          <div class="how-step"><div class="num">3</div><div><strong>Analise cadastral e documentacao</strong><br><span class="text-muted">Envio dos documentos.</span></div></div>
+          <div class="how-step"><div class="num">4</div><div><strong>Assinatura do contrato</strong><br><span class="text-muted">Formalizacao da locacao.</span></div></div>
+        </div>
+        <div class="how-pane d-none" id="pane-anunciar">
+          <div class="how-step"><div class="num">1</div><div><strong>Conte sobre o imovel</strong><br><span class="text-muted">Caracteristicas e condicoes.</span></div></div>
+          <div class="how-step"><div class="num">2</div><div><strong>Avaliacao com o corretor</strong><br><span class="text-muted">Analise do mercado.</span></div></div>
+          <div class="how-step"><div class="num">3</div><div><strong>Preparo da documentacao</strong><br><span class="text-muted">Orientacao sobre documentos.</span></div></div>
+          <div class="how-step"><div class="num">4</div><div><strong>Divulgacao e atendimento</strong><br><span class="text-muted">Atendimento aos interessados.</span></div></div>
+        </div>
+      </div>
+      <p class="text-muted small mt-3">Etapas e documentos variam conforme cada negociacao. Seu corretor orienta cada passo.</p>
+      <div class="text-center mt-3">
+        <a class="btn btn-gold" data-wa="ctaFinal" href="#">Comecar agora</a>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container-xl">
+      <div class="text-center mb-4">
+        <span class="eyebrow">PERGUNTAS FREQUENTES</span>
+        <h2 class="section-title center">Duvidas comuns</h2>
+      </div>
+      <div class="faq-wrap">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">Como funciona a visita a um imovel?</button></h3><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">A visita e agendada com um corretor, presencialmente ou por video, conforme disponibilidade. O corretor acompanha e responde duvidas.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Quais documentos sao necessarios para comprar um imovel?</button></h3><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Geralmente documentos pessoais e do imovel. A lista varia conforme o caso; o corretor orienta cada etapa.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Quais documentos sao necessarios para alugar?</button></h3><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Documentos pessoais e comprovantes, conforme a analise cadastral. O corretor informa a lista adequada.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Voces ajudam com financiamento imobiliario?</button></h3><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Orientamos sobre as etapas gerais do financiamento. Aprovacao e condicoes dependem do banco e da analise de credito.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">Como funciona a avaliacao do meu imovel para vender ou alugar?</button></h3><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Um corretor analisa caracteristicas, localizacao e mercado para sugerir uma faixa de valor, sem promessas de preco final.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f6">Existem custos alem do valor do imovel?</button></h3><div id="f6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, podem ocorrer custos como escritura, registro, impostos, condominio e IPTU, conforme o caso, sem valores fixos.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f7">Posso agendar uma visita online ou por video?</button></h3><div id="f7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, quando disponivel, o corretor pode realizar a visita por video chamada.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f8">Como falo com um corretor?</button></h3><div id="f8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Pelo WhatsApp, telefone ou e-mail, com atendimento em horario comercial.</div></div></div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-muted">Nao encontrou sua duvida? Fale com um corretor.</p>
+          <a class="btn btn-whatsapp" data-wa="faq" href="#"><i class="bi bi-whatsapp"></i> Falar com um corretor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA FINAL -->
+  <section class="section cta-final">
+    <div class="container-xl text-center">
+      <h2>Pronto para encontrar o seu imovel?</h2>
+      <p class="section-subtitle mx-auto" style="color:rgba(255,255,255,0.78);">Veja as opcoes disponiveis ou fale agora com um corretor.</p>
+      <div class="d-flex gap-2 justify-content-center flex-wrap mt-3">
+        <a href="#imoveis" class="btn btn-gold">Ver imoveis</a>
+        <a class="btn btn-outline-light" data-wa="ctaFinal" href="#">Falar com um corretor no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section surface">
+    <div class="container-xl">
+      <div class="text-center mb-4">
+        <span class="eyebrow">CONTATO</span>
+        <h2 class="section-title center">Fale com a Nobre Lar</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <div class="contact-item"><i class="bi bi-telephone"></i><div><div class="label">Telefone</div><a href="tel:+550000000000">(00) 0000-0000</a></div></div>
+            <div class="contact-item"><i class="bi bi-whatsapp"></i><div><div class="label">WhatsApp</div><a href="https://wa.me/5500900000000" target="_blank" rel="noopener noreferrer">(00) 90000-0000</a></div></div>
+            <div class="contact-item"><i class="bi bi-envelope"></i><div><div class="label">E-mail</div><a href="mailto:contato@exemplo-imobiliaria.com.br">contato@exemplo-imobiliaria.com.br</a></div></div>
+            <div class="contact-item"><i class="bi bi-geo-alt"></i><div><div class="label">Endereco</div><span>Av. Exemplo, 800, Loja 3, Centro, Cidade/UF (endereco demonstrativo)</span></div></div>
+            <div class="contact-item"><i class="bi bi-clock"></i><div><div class="label">Horario</div><span>Seg a sex, 9h as 18h; sab, 9h as 13h (visitas mediante agendamento)</span></div></div>
+            <div class="contact-item"><i class="bi bi-card-text"></i><div><div class="label">CRECI</div><span>CRECI/UF 00000-J (exemplo)</span></div></div>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bold mb-2">Fale agora</p>
+            <div class="chips">
+              <a class="chip" id="chip-compra" href="#">Quero comprar</a>
+              <a class="chip" id="chip-aluguel" href="#">Quero alugar</a>
+              <a class="chip" id="chip-anunciar" href="#">Quero anunciar meu imovel</a>
+              <a class="chip" id="chip-outro" href="#">Outro assunto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1" loading="lazy" title="Mapa demonstrativo da localizacao da imobiliaria"></iframe>
+          </div>
+          <p class="small text-muted mt-2"><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div class="brand mb-2"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#0F2A47"/><g fill="none" stroke="#C8A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22 L20 12 L32 22"/><rect x="12" y="22" width="16" height="10" rx="2"/><rect x="17" y="25" width="6" height="7" rx="1"/></g></svg><div><div class="brand-name">Nobre Lar</div><div class="brand-sub">IMOVEIS</div></div></div>
+          <p class="small mb-0">Encontrar o imovel certo e o comeco de uma boa historia.</p>
+        </div>
+        <div class="col-lg-3">
+          <h5>Links uteis</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#imoveis">Busca de imoveis</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#anuncie">Anunciar imovel</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Tipos de imovel</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#imoveis" onclick="setFinalidade('venda');filterState.tipo='Casa';document.getElementById('filter-tipo').value='Casa';applyFilters();">Casas</a></li>
+            <li><a href="#imoveis" onclick="setFinalidade('venda');filterState.tipo='Apartamento';document.getElementById('filter-tipo').value='Apartamento';applyFilters();">Apartamentos</a></li>
+            <li><a href="#imoveis" onclick="setFinalidade('venda');filterState.tipo='Cobertura';document.getElementById('filter-tipo').value='Cobertura';applyFilters();">Coberturas</a></li>
+            <li><a href="#imoveis" onclick="setFinalidade('venda');filterState.tipo='Terreno';document.getElementById('filter-tipo').value='Terreno';applyFilters();">Terrenos</a></li>
+            <li><a href="#imoveis" onclick="setFinalidade('aluguel');filterState.tipo='Sala comercial';document.getElementById('filter-tipo').value='Sala comercial';applyFilters();">Salas comerciais</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Contato</h5>
+          <ul class="list-unstyled small">
+            <li>(00) 0000-0000</li>
+            <li>contato@exemplo-imobiliaria.com.br</li>
+            <li>Av. Exemplo, 800, Loja 3</li>
+            <li>CRECI/UF 00000-J (exemplo)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="year"></span> Nobre Lar Imoveis (nome ficticio). Todos os direitos reservados.</div>
+        <div class="mt-1">CRECI/UF 00000-J (exemplo) · <a href="politica-de-privacidade.html">Politica de privacidade</a></div>
+        <div class="mt-1">As informacoes deste site tem carater geral e informativo. Disponibilidade, precos e condicoes dos imoveis estao sujeitos a confirmacao com a imobiliaria.</div>
+        <div class="mt-1">Este site e um modelo demonstrativo. Imoveis, precos, fotos, nomes, enderecos, telefones, e-mails e registros sao ficticios e devem ser substituidos por informacoes reais e verificadas antes da publicacao.</div>
+      </div>
+    </div>
+  </footer>
+  </main>
+  <!-- MODAL -->
+  <div class="modal fade" id="propertyModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="property-code" id="modal-code"></div>
+            <h2 class="modal-title h4" id="modal-title"></h2>
+            <div class="text-muted small" id="modal-loc"></div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modalCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators" id="modal-carousel-indicators"></div>
+            <div class="carousel-inner gallery-main" id="modal-carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev" aria-label="Foto anterior"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next" aria-label="Proxima foto"><span class="carousel-control-next-icon"></span></button>
+          </div>
+          <div class="gallery-thumbs" id="modal-thumbs"></div>
+          <div class="mt-3">
+            <div class="property-price" id="modal-price"></div>
+            <div class="property-fees" id="modal-fees"></div>
+          </div>
+          <div class="modal-features" id="modal-features"></div>
+          <div id="modal-desc"></div>
+          <h4 class="mt-3">Diferenciais</h4>
+          <ul class="differentials" id="modal-diffs"></ul>
+          <div class="badge-demo d-inline-block mt-2">Imovel demonstrativo. Informacoes ficticias.</div>
+          <div class="d-flex gap-2 flex-wrap mt-3">
+            <a id="modal-wa" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Chamar no WhatsApp sobre este imovel</a>
+            <a id="modal-agendar" class="btn btn-outline-navy" href="#" target="_blank" rel="noopener noreferrer">Agendar visita</a>
+            <a class="btn btn-ghost" href="tel:+550000000000"><i class="bi bi-telephone"></i> Ligar para a imobiliaria</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="fab-whatsapp" aria-label="Falar pelo WhatsApp" data-wa="geral"><i class="bi bi-whatsapp"></i></button>
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
