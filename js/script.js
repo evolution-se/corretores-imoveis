@@ -253,6 +253,9 @@ function initHeader() {
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+  const navCollapse = document.getElementById('mainNav');
+  navCollapse?.addEventListener('show.bs.collapse', () => header.classList.add('menu-open'));
+  navCollapse?.addEventListener('hidden.bs.collapse', () => header.classList.remove('menu-open'));
   document.querySelectorAll('.navbar-collapse .nav-link, .navbar-collapse .btn').forEach(el => {
     el.addEventListener('click', () => {
       const collapse = document.querySelector('.navbar-collapse');
